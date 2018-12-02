@@ -1,0 +1,25 @@
+{
+  "name": "AdventOfCode18",
+  "version": "1.0.0",
+  "description": "My solutions for AdventOfCode 2018",
+  "main": "index.js",
+  "scripts": {
+    "task": "./helpers/runner.sh",
+    "prettier": "prettier --write ./src/**/*.js",
+    "lint": "eslint -c .eslintrc ./src/**/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmenih341/AdventOfCode18.git"
+  },
+  "author": "Gregor Menih <gregor@menih.si>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmenih341/AdventOfCode18/issues"
+  },
+  "homepage": "https://github.com/gmenih341/AdventOfCode18#readme",
+  "devDependencies": {
+    "eslint": "5.9.0",
+    "prettier": "1.15.3"
+  }
+}

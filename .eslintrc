@@ -1,0 +1,21 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "node": true,
+        "es6": true,
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "rules": {
+        "space-before-function-paren": "error",
+        "no-multi-spaces": "error",
+        "no-multiple-empty-lines": ["error", {"max": 1}],
+        "no-unused-expressions": "error",
+        "no-console": "off",
+        "no-constant-condition": "off"
+    }
+}
