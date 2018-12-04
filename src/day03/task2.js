@@ -11,7 +11,7 @@ const parseLine = line => {
 
     return {id, x, y, w, h};
 };
-const makeGrid = (w, h) => [...Array(w)].map(() => [...Array(h)].map(() => 0));
+const makeGrid = (w, h) => [...Array(w)].map(() => Array(h));
 
 const lines = readFileLinesToArray('./input.txt');
 const rects = lines.map(parseLine);
@@ -20,7 +20,11 @@ const grid = makeGrid(1000, 1000);
 rects.forEach(({x, y, w, h}) => {
     for (let i = 0; i < h; i++) {
         for (let j = 0; j < w; j++) {
-            grid[y + j][x + i]++;
+            if (!grid[y + j][x + i]){ 
+                grid[y + j][x + i] = 1;
+            } else {
+                grid[y + j][x + i]++;
+            }
         }
     }
 });
