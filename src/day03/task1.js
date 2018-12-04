@@ -21,7 +21,7 @@ const grid = makeGrid(1000, 1000);
 rects.forEach(({x, y, w, h}) => {
     for (let i = 0; i < h; i++) {
         for (let j = 0; j < w; j++) {
-            if (!grid[y + j][x + i]){ 
+            if (!grid[y + j][x + i]) {
                 grid[y + j][x + i] = 1;
             } else {
                 grid[y + j][x + i]++;
